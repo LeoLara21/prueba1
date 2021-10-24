@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/funcionalidad.js"></script>
+        <link rel="icon" type="image/vnd.microsoft.icon" href="src/favicon.ico">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Número Mágico</title>        
+    </head>
+    <body>  
+            <header id="cabecera">                
+                <img id="image" src="src/interrogante.jpg" alt="flex-container">
+                <h1 id="titulo">BIENVENIDO AL JUEGO DEL NÚMERO MÁGICO, ATRÉVETE A ADIVINAR EL NÚMERO QUE PIENSO</h1>                
+            </header>
+
+            <div id="contenido">
+                <div class="flex-container">                    
+                    <div class="hijo" id="Entrada">    
+                        <form onsubmit="return comenzar()">
+                            <label>Digite su nombre</label>
+                            <input type="text" id="nombre_usuario" size="5">
+                            <label>Digite su número</label>
+                            <input type="text" id="numero_usuario" size="5">
+                            <button type="submit" id="submit_button" style="box-sizing: border-box">Comprobar</button>                                                                     
+                            <button onclick="location.reload()" type="reset" id="reset_button" style="box-sizing: border-box">Reiniciar juego</button> 
+                        </form>
+                    </div>
+                    <div class ="hijo" id="adivina">
+                        <h1 id="demo">adivina en que numero estoy pensando entre el 1 y el 1000</h1>                       
+                    </div>                    
+                </div>  
+                <div class="flex-container">
+                    <div class="hijo" id="pregunta">
+                        <h2 id="resultado">¿Te habrás acercado?</h2>
+                    </div>
+                    <div class="hijo" id="timer">
+                        <h1 id="reloj"></h1>
+                    </div>
+                    <div class="hijo" id="Ranking">
+                        <ul>
+                            <li id="1ero"></li>
+                            <li id="2do"></li>
+                            <li id="3ro"></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+    </body>
+    
+</html>

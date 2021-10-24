@@ -1,0 +1,122 @@
+
+body{
+    margin:0;
+    padding:0;
+    background-color: indigo;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+}
+ 
+#cabecera{
+    padding: 2% 2% 1% 1%;  
+    height: 5%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    border-top: 2px groove darkred;
+    border-bottom: 2px groove darkred;
+}
+
+#image{
+    border: 2px groove darkred;
+    align-content: center;
+    width: 10%;
+    height: 2%;
+}
+
+#titulo{
+    flex: 80%;
+}
+
+#demo{
+    font-style: oblique;
+    color: rgb(232, 80, 252);
+    animation: ease-in;
+}
+
+@media (max-width: 779px){
+    #titulo, #demo{
+        font-size:95%;        
+        text-size-adjust: inherit;
+    }
+    #image{
+        align-content: space-around;
+    }
+    
+}
+
+@media (min-width: 1200px){
+    #titulo{
+        text-size-adjust: inherit;
+    }
+}
+
+.flex-container{
+    display:flex;    
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.hijo{
+    display:flexbox;
+    flex: 10%;
+}
+#entrada{
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: calc(50%);    
+}
+
+.flex-container{
+    margin-top: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: honeydew;
+    font-style: italic;
+    font-size: 80%;
+    border: 2px black solid;
+}
+
+.hijo{
+    padding: 10px;
+}
+
+#timer{
+    justify-content: flex-start;
+    flex-grow: 50%;
+    
+}
+
+#Ranking{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#adivina{
+    justify-content:end ;
+    flex-grow: 50%;
+}
+
+#resultado{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(232, 80, 252);
+    align-items: center;
+    padding-top: 35px;
+}
+
+#reloj{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #015E5E;
+    align-items: center;
+    padding-top: 35px;
+}
+
+
+
